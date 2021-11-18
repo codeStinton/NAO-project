@@ -15,8 +15,8 @@
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
-  <dialogContent topicName="dlg_Concepts_In_QiChat" typeVersion="1.0">
-   <topic path="dlg_Concepts_In_QiChat/dlg_Concepts_In_QiChat_enu.top" language="en_US"/>
+  <dialogContent typeVersion="1.0" topicName="dlg_Concepts_In_QiChat">
+   <topic language="en_US" path="dlg_Concepts_In_QiChat/dlg_Concepts_In_QiChat_enu.top"/>
   </dialogContent>
  </contents>
 </package>
