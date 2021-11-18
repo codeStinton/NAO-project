@@ -15,8 +15,8 @@
       <BehaviorLayer name="behavior_layer1">
         <BehaviorKeyframe name="keyframe1" index="1">
           <Diagram>
-            <Box name="dlg_Concepts_In_QiChat" id="1" localization="8" tooltip="" x="258" y="84">
-              <dialogFile>../dlg_Concepts_In_QiChat/dlg_Concepts_In_QiChat.dlg</dialogFile>
+            <Box name="NAO-Project" id="1" localization="8" tooltip="NAO bot created to hold conversations with elderly people in the care home. " x="175" y="84">
+              <dialogFile>../NAO-Project/NAO-Project.dlg</dialogFile>
               <bitmap>media/images/box/box-dialog.png</bitmap>
               <script language="4">
                 <content>
