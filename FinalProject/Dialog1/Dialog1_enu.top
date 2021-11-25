@@ -1,0 +1,38 @@
+topic: ~Dialog1()
+language: enu
+
+#Adding different variations of words and phrases for the NAO robot to understand
+concept:(greeting) ["how are you" "how you doing" "how are you today" "You okay"]
+concept:(good) [good great okay fine "not bad" "good you"]
+concept:(bad) [sad terrible awful "not [great good well]"]
+
+#This makes NAO understand both "I am" and "I'm"
+concept:(i_am_good) [I'm "I am"] ~good 
+concept:(i_am_bad)  [I'm "I am"] ~bad
+
+#'Greeting' section, depending on what reply the user gives, the conversation will navigate accordinly
+
+
+
+u: (Nice to meet you) How are you
+    u1:([~good ~i_am_good]) Glad to hear that, Im well too. ^gotoRandom (INTERESTS)
+    u1:([~bad ~i_am_bad])^gotoRandom (SAD)
+
+proposal: %INTERESTS What are your interests?
+u: ("["I like" "I love" football]") I love football too, Who's your favourite player?
+        u1:(Messy) I prefer Ronaldo $onStopped=3
+
+#Talking about more personally feelings
+proposal: %SAD Why are you sad?
+    u: ("["I am" "I am feeling" lonley]") I'm sorry to hear that, have you phoned your family or friends today?
+    
+        u1:(Yes) Okay Good ^gotoRandom (LONLEY)
+        u1:(No) oh dear ^gotoRandom (LONLEY)
+
+#Contains some advice on how to deal with lonliness    
+
+proposal: %LONLEY it is really important to contact friends or family regularly. Would you like me to suggest some ways to make friends in the carehome as well?
+
+    u:("yes please") Okay well we run games nights every tuesday and thursday. I can come along with you to help you meet the others. $onStopped=4
+    u: ("no thank you") Okay, well i am here to keep you company. ^gotoRandom (INTERESTS) 
+

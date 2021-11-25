@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="finalproject-9e84de" version="0.0.0">
+ <names>
+  <name lang="en_US">Untitled</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <dialogContent topicName="hello" typeVersion="1.0">
+   <topic language="en_US" path="hello/hello_enu.top"/>
+  </dialogContent>
+  <dialogContent topicName="Dialog1" typeVersion="1.0">
+   <topic language="en_US" path="Dialog1/Dialog1_enu.top"/>
+  </dialogContent>
+  <dialogContent topicName="Medication_Goodbye" typeVersion="1.0">
+   <topic language="en_US" path="Medication_Goodbye/Medication_Goodbye_enu.top"/>
+  </dialogContent>
+  <dialogContent topicName="Greeting" typeVersion="1.0">
+   <topic language="en_US" path="Greeting/Greeting_enu.top"/>
+  </dialogContent>
+ </contents>
+</package>
