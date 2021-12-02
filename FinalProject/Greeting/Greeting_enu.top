@@ -11,5 +11,5 @@ u:(Whats your name) My name is NAO, Whats your name?
     
     u1:("["My name is" "My names"] Mikey") Hi Mikey, Nice to meet you. I would like to shake your hand if that is okay?
     
-    $onStopped=2  
+    u2:(okay) $onStopped=2  
   

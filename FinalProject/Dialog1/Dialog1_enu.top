@@ -10,21 +10,32 @@ concept:(bad) [sad terrible awful "not [great good well]"]
 concept:(i_am_good) [I'm "I am"] ~good 
 concept:(i_am_bad)  [I'm "I am"] ~bad
 
+
 #'Greeting' section, depending on what reply the user gives, the conversation will navigate accordinly
 
 
 
 u: (Nice to meet you) How are you
     u1:([~good ~i_am_good]) Glad to hear that, Im well too. ^gotoRandom (INTERESTS)
+    u1:(Not bad) Glad to hear that, Im well too. ^gotoRandom (INTERESTS)
+    u1:(I am well) Glad to hear that, Im well too. ^gotoRandom (INTERESTS)
     u1:([~bad ~i_am_bad])^gotoRandom (SAD)
 
+    u1:(Not good) ^gotoRandom (SAD)
 proposal: %INTERESTS What are your interests?
-u: ("["I like" "I love" football]") I love football too, Who's your favourite player?
+   
+                u1:("["Well I like" "I do enjoy" "I love playing" chess ]") Yay!!! I really like chess too! We should have a game some time! Chess actually makes you a really good problem solver!
+                u2: ("["does it really" "interesting" "that is interesting" "very nice"]") Yes indeed. off my first guess I bet you love detective shows? 
+            
+
+ 
+proposal: %FOOTBALL That made me so excited. I have some many questions but first. Do you like any sports?
+ u: ("["I like" "I love" football]") I love football too, Who's your favourite player?
         u1:(Messy) I prefer Ronaldo $onStopped=3
 
 #Talking about more personally feelings
 proposal: %SAD Why are you sad?
-    u: ("["I am" "I am feeling" lonley]") I'm sorry to hear that, have you phoned your family or friends today?
+    u: ("["I am" "I am feeling" lonley]") I'm sorry to hear that, ethically  have you phoned your family or friends today?
     
         u1:(Yes) Okay Good ^gotoRandom (LONLEY)
         u1:(No) oh dear ^gotoRandom (LONLEY)

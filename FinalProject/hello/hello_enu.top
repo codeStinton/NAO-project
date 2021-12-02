@@ -8,8 +8,7 @@ concept:(goodbye) [bye goodbye "see you later" "see you" "bye NAO"]
 
 #Beginning of the conversation
 
-
-u:(~hello) Hello
+u:(~hello) 
 
 
 
