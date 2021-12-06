@@ -3,12 +3,11 @@ language: enu
 
 # Defining extra concepts out of words or group of words
 concept:(hello) [hello hi hey "good morning" "Hi NAO"]
-concept:(name) ["Whats "What is"[your name]"]
-concept:(goodbye) [bye goodbye "see you later" "see you" "bye NAO"]
+
 
 #Beginning of the conversation
 
-u:(~hello) 
+u:(hello) 
 
 
 

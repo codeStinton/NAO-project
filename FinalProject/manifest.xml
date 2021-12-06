@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package version="0.0.0" uuid="finalproject-7e1384" installOnlyAtStartup="false">
+<package version="0.0.0" installOnlyAtStartup="false" uuid="finalproject-7e1384">
  <names>
   <name lang="en_US">Untitled</name>
  </names>
@@ -16,16 +16,16 @@
    <permissions/>
   </behaviorContent>
   <dialogContent typeVersion="1.0" topicName="hello">
-   <topic path="hello/hello_enu.top" language="en_US"/>
+   <topic language="en_US" path="hello/hello_enu.top"/>
   </dialogContent>
   <dialogContent typeVersion="1.0" topicName="Dialog1">
-   <topic path="Dialog1/Dialog1_enu.top" language="en_US"/>
+   <topic language="en_US" path="Dialog1/Dialog1_enu.top"/>
   </dialogContent>
   <dialogContent typeVersion="1.0" topicName="Medication_Goodbye">
-   <topic path="Medication_Goodbye/Medication_Goodbye_enu.top" language="en_US"/>
+   <topic language="en_US" path="Medication_Goodbye/Medication_Goodbye_enu.top"/>
   </dialogContent>
   <dialogContent typeVersion="1.0" topicName="Greeting">
-   <topic path="Greeting/Greeting_enu.top" language="en_US"/>
+   <topic language="en_US" path="Greeting/Greeting_enu.top"/>
   </dialogContent>
  </contents>
 </package>

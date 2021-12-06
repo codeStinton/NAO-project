@@ -10,7 +10,10 @@
         <Dialog name="Medication_Goodbye" src="Medication_Goodbye/Medication_Goodbye.dlg" />
         <Dialog name="Greeting" src="Greeting/Greeting.dlg" />
     </Dialogs>
-    <Resources />
+    <Resources>
+        <File name="AC_GuitarFX120D-01" src="AC_GuitarFX120D-01.mp3" />
+        <File name="Clean-02" src="Clean-02.mp3" />
+    </Resources>
     <Topics>
         <Topic name="hello_enu" src="hello/hello_enu.top" topicName="hello" language="en_US" nuance="enu" />
         <Topic name="Dialog1_enu" src="Dialog1/Dialog1_enu.top" topicName="Dialog1" language="en_US" nuance="enu" />

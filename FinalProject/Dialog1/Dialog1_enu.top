@@ -16,10 +16,10 @@ concept:(i_am_bad)  [I'm "I am"] ~bad
 
 
 u: (Nice to meet you) How are you
-    u1:([~good ~i_am_good]) Glad to hear that, Im well too. ^gotoRandom (INTERESTS)
-    u1:(Not bad) Glad to hear that, Im well too. ^gotoRandom (INTERESTS)
-    u1:(I am well) Glad to hear that, Im well too. ^gotoRandom (INTERESTS)
-    u1:([~bad ~i_am_bad])^gotoRandom (SAD)
+    u1:([~good ~i_am_good "how are you"]) Glad to hear that, Im well too. ^gotoRandom (INTERESTS)
+    u1:(Not bad "how are you") Glad to hear that, Im well too. ^gotoRandom (INTERESTS)
+    u1:(I am well "how are you") Glad to hear that, Im well too. ^gotoRandom (INTERESTS)
+    u1:([~bad ~i_am_bad "how are you"]) I am sorry to hear that. I am fine thanks but,  enough on me,  you are the priority today. ^gotoRandom (SAD)
 
     u1:(Not good) ^gotoRandom (SAD)
 proposal: %INTERESTS What are your interests?
@@ -34,10 +34,9 @@ proposal: %FOOTBALL That made me so excited. I have some many questions but firs
         u1:(Messy) I prefer Ronaldo $onStopped=3
 
 #Talking about more personally feelings
-proposal: %SAD Why are you sad?
-    u: ("["I am" "I am feeling" lonley]") I'm sorry to hear that, ethically  have you phoned your family or friends today?
-    
-        u1:(Yes) Okay Good ^gotoRandom (LONLEY)
+proposal: %SAD Is there any reason you are feeling sad?
+    u: ("["I am" "I am feeling" lonley]") I'm sorry to hear that, ethically I have to ask you this. Can i ask you a personal question?
+        u1:("["Yes" "Of course" "Sure" you can]") Okay, can i ask have you phoned your family or friends today?
         u1:(No) oh dear ^gotoRandom (LONLEY)
 
 #Contains some advice on how to deal with lonliness    
