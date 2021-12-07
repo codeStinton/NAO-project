@@ -1,11 +1,11 @@
 topic: ~Medication_Goodbye()
 language: enu
 
-u:(goodbye) Before you go, have you taken your medication today?
+u:("["I am off now" "see you later" "goodnight" "I have got to go now" "goodbye"]") Before you go, have you taken your medication today?
 
 u1: (Yes) Great, just in case Todays medication you need to take are Hydrocodone, Azithromycin and Metformin, Goodbye! 
 
 u1: (No) No worries, just make sure you take your Hydrocodone, Azithromycin and Metformin, 
 
 
-$onStopped=5 #Onstop triggers animation
+$onStopped=5

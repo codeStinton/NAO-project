@@ -1,9 +1,9 @@
 topic: ~Greeting()
 language: enu
-#Concepts Declared
-concept:(name) ["Whats "What is"[your name]"]
 
-     u: (name) My name is NAO, Whats yours?
+concept:(name) ["Whats "What is "your name"]
+
+     u: (~name) My name is NAO, Whats yours?
     
     u1:("["My name is" "My names"] Jay") Hi Jay, Nice to meet you. ^gotoRandom (HANDSHAKE)  
     
@@ -14,4 +14,3 @@ concept:(name) ["Whats "What is"[your name]"]
 proposal: %HANDSHAKE I would like to shake your hand if that is okay?
 
 u1:(okay then) $onStopped=2  #Input triggers Onstopped which leads to an animation
-  
