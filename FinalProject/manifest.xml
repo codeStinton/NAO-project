@@ -15,16 +15,16 @@
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
-  <dialogContent typeVersion="1.0" topicName="hello">
+  <dialogContent topicName="hello" typeVersion="1.0">
    <topic language="en_US" path="hello/hello_enu.top"/>
   </dialogContent>
-  <dialogContent typeVersion="1.0" topicName="Dialog1">
+  <dialogContent topicName="Dialog1" typeVersion="1.0">
    <topic language="en_US" path="Dialog1/Dialog1_enu.top"/>
   </dialogContent>
-  <dialogContent typeVersion="1.0" topicName="Medication_Goodbye">
+  <dialogContent topicName="Medication_Goodbye" typeVersion="1.0">
    <topic language="en_US" path="Medication_Goodbye/Medication_Goodbye_enu.top"/>
   </dialogContent>
-  <dialogContent typeVersion="1.0" topicName="Greeting">
+  <dialogContent topicName="Greeting" typeVersion="1.0">
    <topic language="en_US" path="Greeting/Greeting_enu.top"/>
   </dialogContent>
  </contents>

@@ -8,4 +8,4 @@ u1: (Yes) Great, just in case Todays medication you need to take are Hydrocodone
 u1: (No) No worries, just make sure you take your Hydrocodone, Azithromycin and Metformin, 
 
 
-$onStopped=4
+$onStopped=5 #Onstop triggers animation

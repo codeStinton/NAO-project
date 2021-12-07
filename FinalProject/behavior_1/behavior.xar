@@ -1288,7 +1288,7 @@ class MyClass(GeneratedClass):
               </Timeline>
               <Resource name="All motors" type="Lock" timeout="0" />
             </Box>
-            <Box name="Tactile Head" id="10" localization="8" tooltip="Detect touch on head tactile sensor." x="70" y="62">
+            <Box name="Tactile Head" id="10" localization="8" tooltip="Detect touch on head tactile sensor." x="123" y="16">
               <bitmap>media/images/box/sensors/tactileHead.png</bitmap>
               <script language="4">
                 <content>
@@ -1703,7 +1703,7 @@ class MyClass(GeneratedClass):
             <Link inputowner="7" indexofinput="2" outputowner="8" indexofoutput="4" />
             <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="5" />
             <Link inputowner="10" indexofinput="2" outputowner="0" indexofoutput="2" />
-            <Link inputowner="11" indexofinput="2" outputowner="0" indexofoutput="2" />
+            <Link inputowner="3" indexofinput="2" outputowner="0" indexofoutput="2" />
           </Diagram>
         </BehaviorKeyframe>
       </BehaviorLayer>

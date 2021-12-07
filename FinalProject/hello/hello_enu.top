@@ -11,6 +11,6 @@ u:(hello)
 
 
 
-$onStopped=1  
+$onStopped=1  #End of Converstion section, triggering animation to play
 
 
