@@ -20,5 +20,4 @@ concept:(name) ["Whats" "What is" "[your name]"]
     
 proposal: %HANDSHAKE I would like to shake your hand if that is okay?
 
-
 u1:(okay then) $onStopped=2  #Input triggers Onstopped which leads to an animation
