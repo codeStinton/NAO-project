@@ -1,11 +1,16 @@
 topic: ~Medication_Goodbye()
 language: enu
 
+#Goodbye proposal
+
 proposal: %GOODBYE 
 u:("["I am off now" "see you later" "goodnight" "I have got to go now" "goodbye"]") Before you go, have you taken your medication today?
 
+
+#Error catch, if NAO doesnt understand what the user says, it loops the 'Goodbye' proposal until it understands
 u1:(e:Dialog/NotUnderstood) Can you give me a yes or no answer please? ^stayInScope
 
+#The program finishes and moves to the final code box. This box sits down the NAO when the user touches its right hand.
 u2: (Yes) Great, just in case Todays medication you need to take are Hydrocodone, Azithromycin and Metformin, Goodbye! $onStopped=5
 
 u2: (No) No worries, just make sure you take your Hydrocodone, Azithromycin and Metformin $onStopped=6
