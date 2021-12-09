@@ -1,9 +1,14 @@
 topic: ~Greeting()
 language: enu
 
+#Different variats of the user asking the robot for its name
 concept:(name) ["Whats" "What is" "[your name]"]
 
      u: ("What is your name" ) My name is NAO, Whats yours?
+     
+     #This has to be hard coded due to the NAO bot not understanding new names if theyre not already written
+     #After this has completed, the conversation navigates to the 'Handshake' proposal and the animation created through a timeline plays. 
+     #This animation is a handshake
     
     u1:("["My name is" "My names"] Jay") Hi Jay, Nice to meet you. ^gotoRandom (HANDSHAKE)  
     
@@ -14,5 +19,6 @@ concept:(name) ["Whats" "What is" "[your name]"]
     u1:(e:Dialog/NotUnderstood) Sorry I didnt understand that, What is your name? ^stayInScope  
     
 proposal: %HANDSHAKE I would like to shake your hand if that is okay?
+
 
 u1:(okay then) $onStopped=2  #Input triggers Onstopped which leads to an animation
