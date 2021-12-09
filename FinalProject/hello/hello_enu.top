@@ -2,12 +2,12 @@ topic: ~hello()
 language: enu
 
 # Defining extra concepts out of words or group of words
-concept:(hello) [hello hi hey "good morning" "Hi NAO"]
+concept:(hello) [hello hi hey "good morning"]
 
 
 #Beginning of the conversation
 
-u:(hello) 
+u: (~hello) 
 
 
 

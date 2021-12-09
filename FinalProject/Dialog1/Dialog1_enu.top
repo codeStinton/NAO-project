@@ -38,6 +38,7 @@ proposal: %SAD Is there any reason you are feeling sad?
         u1:("["Yes" "Of course" "Sure" you can]") Okay, can i ask have you phoned your family or friends today?
          u2:(No) oh dear ^gotoRandom (LONLEY)
          u2:(yes) great! ^gotoRandom (LONLEY) 
+         
         
         proposal: %LONLEY it is really important to contact friends or family regularly. Would you like me to suggest some ways to make friends in the carehome as well?
         
@@ -51,9 +52,3 @@ proposal: %LONLEY it is really important to contact friends or family regularly.
     u:("yes please") Okay well we run games nights every tuesday and thursday. I can come along with you to help you meet the others. $onStopped=4
     u: ("no thank you") Okay, well i am here to keep you company. ^gotoRandom (INTERESTS) 
 
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Do

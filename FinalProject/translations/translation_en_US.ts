@@ -172,10 +172,9 @@
             <translation type="vanished">Hello</translation>
         </message>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>You have a very firm handshake</source>
             <comment>Text</comment>
-            <translation type="unfinished">You have a very firm handshake</translation>
+            <translation type="obsolete">You have a very firm handshake</translation>
         </message>
     </context>
     <context>

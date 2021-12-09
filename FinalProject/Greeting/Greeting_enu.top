@@ -1,15 +1,17 @@
 topic: ~Greeting()
 language: enu
 
-concept:(name) ["Whats "What is "your name"]
+concept:(name) ["Whats" "What is" "[your name]"]
 
-     u: (~name) My name is NAO, Whats yours?
+     u: ("What is your name" ) My name is NAO, Whats yours?
     
     u1:("["My name is" "My names"] Jay") Hi Jay, Nice to meet you. ^gotoRandom (HANDSHAKE)  
     
     u1:("["My name is" "My names"] Elan") Hi Elan, Nice to meet you. ^gotoRandom (HANDSHAKE)  
     
-    u1:("["My name is" "My names"] Mikey") Hi Mikey, Nice to meet you. ^gotoRandom (HANDSHAKE)  
+    u1:("["My name is" "My names"] Mikey") Hi Mikey, Nice to meet you. ^gotoRandom (HANDSHAKE)
+  
+    u1:(e:Dialog/NotUnderstood) Sorry I didnt understand that, What is your name? ^stayInScope  
     
 proposal: %HANDSHAKE I would like to shake your hand if that is okay?
 
