@@ -11,26 +11,31 @@ concept:(i_am_good) [I'm "I am"] ~good
 concept:(i_am_bad)  [I'm "I am"] ~bad
 
 
-#'Greeting' section, depending on what reply the user gives, the conversation will navigate accordinly
+#NAO asks how the user is feeling and depending if the user is good or bad, the conversation will navigate somewhere different.
 
-
-
+#If the user is feeling good, the conversation goes to 'Interests' proposal
 u: ("["Thank you" "haha thanks" "oh how kind" "nice to meet you"]") Anyway! Can i ask, How are you?
     u1:([~good ~i_am_good "how are you"]) Glad to hear that, Im well too. ^gotoRandom (INTERESTS)
     u1:(Not bad "how are you") Glad to hear that, Im well too. ^gotoRandom (INTERESTS)
     u1:(I am well "how are you") Glad to hear that, Im well too. ^gotoRandom (INTERESTS)
+    
+    #If the user is feeling bad the conversation goes to 'sad' proposal
     u1:([~bad ~i_am_bad "how are you"]) I am sorry to hear that. I am fine thanks but,  enough on me,  you are the priority today. ^gotoRandom (SAD)
     u1:(Not good) ^gotoRandom (SAD)
     
+    #Interests proposal
 proposal: %INTERESTS What are your interests?
                 u1:("["Well I like" "I do enjoy" "I love playing" chess ]") Yay!!! I really like chess too! We should have a game some time! Chess actually makes you a really good problem solver!
                 u2: ("["does it really" "interesting" "that is interesting" "very nice"]") Yes indeed. off my first guess I bet you love detective shows? 
                 u3:("["yes i do" "I do actually"]") ^gotoRandom (FOOTBALL)
-            
+                
+                
+#Football proposal
 proposal: %FOOTBALL That made me so excited. I have so many questions but first. 
 Do you like any sports?
  u: ("["I like" "I love" football]") I love football too, Who's your favourite player?
         u1:("["my favourite is messy" "I like messy"]") Interesting, hes very good but sadly I prefer Ronaldo $onStopped=3
+     
 
 #Talking about more personally feelings
 proposal: %SAD Is there any reason you are feeling sad?
@@ -39,10 +44,13 @@ proposal: %SAD Is there any reason you are feeling sad?
          u2:(No) oh dear ^gotoRandom (LONLEY)
          u2:(yes) great! ^gotoRandom (LONLEY) 
          
-        
+        #Lonley proposal
         proposal: %LONLEY it is really important to contact friends or family regularly. Would you like me to suggest some ways to make friends in the carehome as well?
-        
+
+#If the user replies 'yes please' the conversation moves to the next dialog box
 u:("yes please") Okay well we run games nights every tuesday and thursday. I can come along with you to help you meet the others. $onStopped=4
+
+#If the user says 'no thank you' the dialog moves to the 'Interests' proposal
 u: ("no thank you") Okay, well i am here to keep you company. ^gotoRandom (INTERESTS)
 
 #Contains some advice on how to deal with lonliness    
