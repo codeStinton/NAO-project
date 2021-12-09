@@ -15,7 +15,9 @@ concept:(name) ["Whats" "What is" "[your name]"]
     u1:("["My name is" "My names"] Elan") Hi Elan, Nice to meet you. ^gotoRandom (HANDSHAKE)  
     
     u1:("["My name is" "My names"] Mikey") Hi Mikey, Nice to meet you. ^gotoRandom (HANDSHAKE)
+    
   
+    #Error catch, if NAO doesnt undersatnd what the user says, it loops through the previous section until it understands
     u1:(e:Dialog/NotUnderstood) Sorry I didnt understand that, What is your name? ^stayInScope  
     
 proposal: %HANDSHAKE I would like to shake your hand if that is okay?
