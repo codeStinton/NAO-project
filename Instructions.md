@@ -6,10 +6,10 @@ Connect to the Robot and run.
 
 You can also open the whole folder within Choregraphe and run it that way.
 
-
-
 NAO 6.0 Robot Model:
 
+
+<img src="Images&Videos/NAO6.0RobotModel.PNG">
 
 
 For optimum functionality, communicate with NAO in a quiet environment.
