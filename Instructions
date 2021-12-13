@@ -4,6 +4,6 @@ Download github files.
 Within the downloaded files, open 'FinalProject.pml'.
 Connect to the Robot and run.
 
-![] (Images&Videos/NAO6.0RobotModel.PNG)
+![](Images&Videos/NAO6.0RobotModel.PNG)
 
 You can also open the whole folder within Choregraphe and run it that way.
